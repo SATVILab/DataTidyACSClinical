@@ -1,0 +1,11 @@
+# Appendix
+
+## Build
+
+```{r }
+devtools::build(
+  pkg = here::here(),
+  path = here::here("../Output/OutputDataTidyACSClinical"),
+  binary = FALSE
+)
+```
