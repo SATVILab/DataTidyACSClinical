@@ -10,7 +10,7 @@ setwd(here::here())
   
 Save `data_tidy_clinical.rds` from `TuberculomicsCompendium` if it is not available. This is the full clinical data set for the ACS, including all variables.
 ```{r }
-dir_output <- here::here("../OutputDataTidyACSClinical")
+dir_output <- here::here("../Output/OutputDataTidyACSClinical")
 if (!requireNamespace("usethis", quietly = TRUE)) {
   utils::install.packages("usethis", quiet = TRUE)
 }
