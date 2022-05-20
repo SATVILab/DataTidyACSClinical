@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^ThesisRodo\.Rproj$
 ^\.Rproj\.user$
 ^inst
