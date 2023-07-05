@@ -18,7 +18,7 @@ build:
   git:
     commit: yes
     add-untracked: yes
-    push: no
+    push: yes
   github-release:
     '@version':
       content: code
