@@ -1,31 +1,31 @@
-# default directory settings:
 directories:
   data-raw:
     path: _data_raw
-    archive: true
-  cache: 
+    archive: yes
+  cache:
     path: _tmp
-  output: 
+  output:
     path: _output
-  archive: 
+  archive:
     path: _archive
   docs:
-    archive: true
-
+    archive: yes
+    path: docs
+    output: yes
 build:
-  dev-output: true
-  package: false
+  dev-output: yes
+  package: no
   git:
-    commit: true
-    add-untracked: true
-    push: false
+    commit: yes
+    add-untracked: yes
+    push: no
   github-release:
     '@version':
       content: code
-      body: "Latest source code"
+      body: Latest source code
     input:
-      content: [data-raw]
-      body: "Project inputs"
+      content: data-raw
+      body: Clinical data as from the FredHutch/TubeculomicsCompendium package
     output:
-      content: [output]
-      body: "Project outputs"
+      content: [docs, output, data-raw]
+      body: Clinical data, ACS participant dataset and processing documentation
