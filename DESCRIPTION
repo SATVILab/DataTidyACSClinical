@@ -1,6 +1,6 @@
 Package: DataTidyACSClinical
 Title: Provision ACS clinical data
-Version: 1.0.1
+Version: 1.0.2
 Authors@R: person("Miguel", "Rodo", , "miguel.rodo@outlook.com", role = c("aut", "cre"))
 Maintainer: Miguel Rodo <miguel.rodo@outlook.com>
 Description: Provision ACS clinical data
