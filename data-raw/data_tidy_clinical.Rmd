@@ -13,19 +13,21 @@ Save `data_tidy_clinical.rds` from `TuberculomicsCompendium` if it is not availa
 dir_output <- here::here("../Output/OutputDataTidyACSClinical")
 if (!dir.exists(dir_output)) dir.create(dir_output, recursive = TRUE)
 if (!file.exists(here::here("data/data_tidy_clinical.rda"))) {
-  if (!requireNamespace("TuberculomicsCompendium", quietly = TRUE)) {
-    stop("Email Miguel Rodo at rdxmig002@myuct.ac.za for the TuberculomicsCompendium package")
-  }
-  data_tidy_clinical <- TuberculomicsCompendium::clinical_data
-  usethis::use_data(data_tidy_clinical)
-  readr::write_csv(
-    data_tidy_clinical,
-    file = file.path(dir_output, "data_tidy_clinical.csv")
-  )
-  invisible(file.copy(
-    from = "data/data_tidy_clinical.rda",
-    to = file.path(dir_output, "data_tidy_clinical.rda")
-  ))
+  #if (!requireNamespace("TuberculomicsCompendium", quietly = TRUE)) {
+  stop("Email Miguel Rodo at rdxmig002@myuct.ac.za for the TuberculomicsCompendium package")
+  #}
+  #data("clinical_data", package = "TuberculomicsCompendium")
+  #data_tidy_clinical <- clinical_data
+  #rm("clinical_data")
+  #usethis::use_data(data_tidy_clinical)
+  #readr::write_csv(
+  #  data_tidy_clinical,
+  #  file = file.path(dir_output, "data_tidy_clinical.csv")
+  #)
+  #invisible(file.copy(
+  #  from = "data/data_tidy_clinical.rda",
+  #  to = file.path(dir_output, "data_tidy_clinical.rda")
+  #))
 }
 load(here::here("data/data_tidy_clinical.rda"))
 ```
