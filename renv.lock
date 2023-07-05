@@ -1157,7 +1157,7 @@
       "RemoteUsername": "SATVILab",
       "RemotePkgRef": "SATVILab/projr",
       "RemoteRef": "HEAD",
-      "RemoteSha": "744f8be0624c0b3a2a81870515d26ef7e331f8dc",
+      "RemoteSha": "3d7a413425eb5c0c5a936225a486165708701b97",
       "Requirements": [
         "bookdown",
         "desc",
@@ -1174,7 +1174,7 @@
         "usethis",
         "yaml"
       ],
-      "Hash": "37414cad267614effc5f64f1bbff137c"
+      "Hash": "dfb1289ce44c7738f97bac922735315c"
     },
     "ps": {
       "Package": "ps",
