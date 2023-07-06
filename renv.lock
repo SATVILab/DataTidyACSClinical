@@ -1,7 +1,27 @@
 {
   "R": {
-    "Version": "4.3.0",
+    "Version": "4.2.3",
     "Repositories": [
+      {
+        "Name": "BioCsoft",
+        "URL": "https://bioconductor.org/packages/3.14/bioc"
+      },
+      {
+        "Name": "BioCann",
+        "URL": "https://bioconductor.org/packages/3.14/data/annotation"
+      },
+      {
+        "Name": "BioCexp",
+        "URL": "https://bioconductor.org/packages/3.14/data/experiment"
+      },
+      {
+        "Name": "BioCworkflows",
+        "URL": "https://bioconductor.org/packages/3.14/workflows"
+      },
+      {
+        "Name": "BioCbooks",
+        "URL": "https://bioconductor.org/packages/3.14/books"
+      },
       {
         "Name": "RSPM",
         "URL": "https://packagemanager.rstudio.com/all/latest"
@@ -1433,7 +1453,7 @@
     },
     "sass": {
       "Package": "sass",
-      "Version": "0.4.6.9000",
+      "Version": "0.4.0.9000",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
@@ -1448,7 +1468,7 @@
         "rappdirs",
         "rlang"
       ],
-      "Hash": "4ff4cd89611d06cd538fce0793b9eeae"
+      "Hash": "731af18f001a1df2285b653da1e9f9f1"
     },
     "scales": {
       "Package": "scales",
