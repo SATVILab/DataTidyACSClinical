@@ -1,4 +1,3 @@
-Sys.setenv("RENV_CONFIG_PAK_ENABLED" = "TRUE")
 options(
   repos = c(
     RSPM = "https://packagemanager.rstudio.com/all/latest",
@@ -21,16 +20,6 @@ if (Sys.info()[["sysname"]] %in% c("Darwin", "Windows")) {
   ))
 }
 
-# make renv use scratch directory if available
-# and that is either where the container is or
-# the code is running on SLURM
-slurm_ind <- any(grepl("^SLURM_", names(Sys.getenv())))
-sif_ind_app <- grepl("^/scratch", Sys.getenv("APPTAINER_CONTAINER"))
-sif_ind_sing <- grepl("^/scratch", Sys.getenv("SINGULARITY_CONTAINER"))
-dir_exists_ind <- dir.exists(file.path("/scratch/", Sys.getenv("USER")))
-if ((slurm_ind || sif_ind_app || sif_ind_sing) && dir_exists_ind) {
-  source("./scripts/R/hpc_renv_setup.R")
-}
 source("renv/activate.R")
 
 # add commonly-used dev functions and attached libraries
