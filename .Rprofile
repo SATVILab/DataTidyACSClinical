@@ -1,6 +1,4 @@
 Sys.setenv("RENV_CONFIG_PAK_ENABLED" = "TRUE")
-source("renv/activate.R")
-
 options(
   repos = c(
     RSPM = "https://packagemanager.rstudio.com/all/latest",
@@ -22,14 +20,18 @@ if (Sys.info()[["sysname"]] %in% c("Darwin", "Windows")) {
     INLA = "https://inla.r-inla-download.org/R/testing"
   ))
 }
-
-
 # make renv use scratch directory
 slurm_ind <- any(grepl("^SLURM_", names(Sys.getenv())))
 dir_exists_ind <- dir.exists(file.path("/scratch/", Sys.getenv("USER")))
 if (slurm_ind && dir_exists_ind) {
   source("./scripts/R/hpc_renv_setup.R")
 }
+source("renv/activate.R")
+
+
+
+
+
 
 # add commonly-used dev functions and attached libraries
 source("./scripts/R/dev.R")
