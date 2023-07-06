@@ -33,10 +33,5 @@ if ((slurm_ind || sif_ind_app || sif_ind_sing) && dir_exists_ind) {
 }
 source("renv/activate.R")
 
-
-
-
-
-
 # add commonly-used dev functions and attached libraries
 source("./scripts/R/dev.R")
