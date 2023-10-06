@@ -2,7 +2,7 @@ directories:
   data-raw:
     path: _data_raw
     archive: yes
-    ignore: false
+    ignore_git: no
   cache:
     path: _tmp
   output:
@@ -28,5 +28,9 @@ build:
       content: data-raw
       body: Clinical data as from the FredHutch/TubeculomicsCompendium package
     output:
-      content: [docs, output, data-raw]
+      content:
+      - docs
+      - output
+      - data-raw
       body: Clinical data, ACS participant dataset and processing documentation
+

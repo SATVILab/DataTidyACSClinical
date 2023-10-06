@@ -11,6 +11,7 @@ Save `data_tidy_clinical.rds` from `TuberculomicsCompendium` if it is not availa
 ```{r }
 dir_output <- projr::projr_dir_get("output")
 load(projr::projr_path_get("data-raw", "data_tidy_clinical.rda"))
+usethis::use_data(data_tidy_clinical, overwrite = TRUE)
 ```
 
 However, you only need the names of progressors and matched controls. I've also included whether or not they progressed.
@@ -27,7 +28,6 @@ data_tidy_acs_participants <- data_tidy_clinical |>
     dplyr::ungroup()
 
 usethis::use_data(data_tidy_acs_participants, overwrite = TRUE)
-
 
 file.copy(
   "data/data_tidy_acs_participants.rda",

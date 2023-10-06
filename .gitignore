@@ -15,3 +15,10 @@ _archive/**/*
 docs/**/*
 
 
+# Start of projr section: do not edit by hand (until `# End of projr section`)
+_tmp/**
+_output/**
+_archive/**
+docs/**
+# End of projr section
+
